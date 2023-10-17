@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <input type="checkbox" id="barraLateral">
+<label for="barraLateral">
+<img src="https://cdn-icons-png.flaticon.com/512/814/814191.png" width="50" height ="50">
+</label>
+
+<nav class="navegar">
+
+<ul class="acessar">
+<li><a href="#" class="links">Home</a></li>
+<li><a href="" class="links">Contatos</a></li>
+<li><a href=""class="links">Sobre</a></li>
+</ul>
+
+<label for="barraLateral">
+<img class="imagemDentroDaBarra" src="https://cdn-icons-png.flaticon.com/512/814/814191.png" width="50" height ="50">
+</label>
+<p align="center">DSmédia desde 2023</p>
+</nav>
+
+  
+</body>
+<style>
+  body{
+    margin:0;
+    background-color:whitesmoke;
+}
+.acessar{
+    list-style:none;
+}
+
+.links{
+  text-decoration:none; 
+  color:white;
+  padding:20px 10px;
+  display:block;
+  background-color:orange;
+  margin-left:-40px;
+  padding-left:20px;
+  font-family:Roboto;
+  font-size:18px;
+   
+}
+
+.links:hover{
+    background-color:green; 
+    border:3px solid;  
+}
+
+
+
+.navegar{
+    height:90%;
+    width:350px;
+    position:absolute;
+    left:-350px;
+    background-color:lightblue;
+    padding-top:70px;
+        
+      
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+
+input[type="checkbox"]:checked ~ nav{
+    transform:translateX(350px);
+    transition:0.9s;
+}
+
+.imagemDentroDaBarra{position:absolute;
+top:10px;
+}
+
+img{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+
+p{
+    position:relative;
+    top:400px;    
+    
+  }  
+
+
+</style>
+</html>
